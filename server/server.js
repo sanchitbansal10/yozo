@@ -8,8 +8,12 @@ const mongoose = require('mongoose')
 
 
 
+
 //controller import
 const submitNewUser = require('./controller/submitNewUser')
+const submitInterest = require('./controller/submitInterest')
+const getUserData = require('./controller/getUserData')
+const giveInterestedPeople = require('./controller/giveInterestedPeople')
 
 
 mongoose.Promise = global.Promise;
@@ -23,9 +27,14 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 const app = express();
 
-app.post('/submitNewUser',jsonParser,submitNewUser)
 
-//middleware
+//routes
+app.post('/submitNewUser',jsonParser,submitNewUser)
+app.get('/getUserData',getUserData)
+app.post('/submitInterest',jsonParser,submitInterest)
+app.get('/exploreInterest',giveInterestedPeople)
+
+
 
 
 

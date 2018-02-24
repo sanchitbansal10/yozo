@@ -1,0 +1,15 @@
+.showPeople{
+    border:2px solid grey;
+    width:400px;
+    height:210px;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    background: linear-gradient(135deg, #3b3b3d 0%,#212425 48%,#697070 100%);
+    color:white;
+    font-size: 1.5em;
+    margin:20px
+}
+
+.elementPeople{
+    border:2px solid grey;
+    color:white
+}

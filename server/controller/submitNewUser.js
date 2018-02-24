@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 var User = require('../models/User')
+var Interests= require('../models/Interests')
 
 let submitNewUser = (req,res) => {
 
@@ -8,9 +9,12 @@ let submitNewUser = (req,res) => {
     if(err){
     console.log('error in saving')}
     if(res){
-        console.log(res)
+        console.log('user added')
     }
     })
+
+    
+
 }
 
 module.exports = submitNewUser

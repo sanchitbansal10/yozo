@@ -1,0 +1,5 @@
+displayFlex{
+    display: flex;
+    grid-template-column:300px 300px;
+    flex-wrap: nowrap
+}
